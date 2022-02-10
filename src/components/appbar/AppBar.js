@@ -1,6 +1,7 @@
 import React from 'react'
+import { IoEllipsisVertical, IoPersonCircleOutline, IoMailOutline, IoNotificationsOutline} from 'react-icons/io5'
 import { IconButton } from '../../ui/buttons'
-import {AppBarItem, AppBarItemGroup, AppBarItems, AppBarStyles, AppBarLayout } from './styles'
+import { AppBarItem, AppBarItemGroup, AppBarItems, AppBarStyles, AppBarLayout } from './styles'
 
 function AppBar (props) {
     return (
@@ -9,7 +10,18 @@ function AppBar (props) {
                 <AppBarItems>
                     <AppBarItem>branding</AppBarItem>
                     <AppBarItemGroup>
-                        <IconButton></IconButton>
+                    <IconButton>
+                            <IoMailOutline size="1.5rem" />
+                        </IconButton>
+                        <IconButton>
+                            <IoNotificationsOutline size="1.5rem" />
+                        </IconButton>
+                        <IconButton>
+                            <IoPersonCircleOutline size="2.75rem" />
+                        </IconButton>
+                        <IconButton>
+                            <IoEllipsisVertical size="1.25rem" color="#999" />
+                        </IconButton>
                     </AppBarItemGroup>
                 </AppBarItems>
             </AppBarStyles>
